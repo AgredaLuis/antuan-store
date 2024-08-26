@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import { ViewTransitions } from 'astro:transitions';
 import { fetchProductBySlug } from "../lib/products"; // Asume que tienes una función para obtener productos por slug
 
 const { slug } = Astro.params;
@@ -31,6 +32,7 @@ const updatedAtFormatted = formatDate(product.updated_at);
             alt={product.name}
             width="1310"
             height="873"
+            transition:name={product.slug}
           />
         </figure>
 
