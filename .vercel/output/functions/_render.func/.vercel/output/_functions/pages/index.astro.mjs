@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, a as renderComponent, d as renderTransition } from '../chunks/astro/server_BQUoTTc7.mjs';
 import { $ as $$Image } from '../chunks/_astro_assets_CLnyYu7l.mjs';
 /* empty css                                 */
-import { $ as $$Layout } from '../chunks/Layout_DUeu1nID.mjs';
+import { $ as $$Layout } from '../chunks/Layout_DmqLtCI5.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$FAQ = createComponent(($$result, $$props, $$slots) => {
