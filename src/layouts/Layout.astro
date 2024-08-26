@@ -12,7 +12,7 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content="Mira nuestros nuevos productos Fitness & skin Care" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
@@ -26,7 +26,6 @@ const { title } = Astro.props;
 
 <style>
   :root {
-    font-family: Inter, sans-serif;
     font-feature-settings:
       "liga" 1,
       "calt" 1,
@@ -40,12 +39,6 @@ const { title } = Astro.props;
       /* Open nine */ "cv01" 1,
       /* Alternate one */ "cv09",
       /* Flat-top three */ "cv02" 1; /* Open 4 */
-  }
-  @supports (font-variation-settings: normal) {
-    /* Use variable font if supported */
-    :root {
-      font-family: InterVariable, sans-serif;
-    }
   }
 
   *{
