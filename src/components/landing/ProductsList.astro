@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+
+const response = await fetch("https://store.api.antuan01.com/api/products");
+const data = await response.json();
+---
+
+<section>
+  <div class="mx-auto px-8 max-w-7xl py-12 md:px-12">
+    <div class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-3">
+      {
+        data.map((products) => (
+          <a href={`/${products.slug}`}>
+            <figure id={products.id} class="hover:cursor-pointer">
+              <div class="rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  class="w-full hover:scale-105 hover:contrast-125 duration-200"
+                  src={products.image_url}
+                  alt={products.slug}
+                  width="1310"
+                  height="873"
+                />
+              </div>
+              <div class="mt-4 flex justify-between px-6">
+                <div>
+                  <h3 class="font-medium text-negroni-500">
+                    <span aria-hidden="true" class="inset-0" />
+                    {products.name}
+                  </h3>
+                  <p class="mt-1 text-lg font-medium leading-6 text-white">
+                    {products.description}
+                  </p>
+                </div>
+                <p class="text-base text-tomato-500">${products.price}</p>
+              </div>
+            </figure>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

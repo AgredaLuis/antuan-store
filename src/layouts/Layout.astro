@@ -1,0 +1,53 @@
+---
+import Footer from '../components/global/Footer.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-[#3E433E] antialiased">
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<style>
+  :root {
+    font-family: Inter, sans-serif;
+    font-feature-settings:
+      "liga" 1,
+      "calt" 1,
+      /* Contextual Alternates */ "dlig" 1,
+      /* Discretionary Ligatures */ "ss07" 1,
+      /* fSquare punctuation */ "ss08" 1,
+      /* Square quotes */ "zero" 1,
+      /* Slashed zero */ "tnum" 1,
+      /* Tabular numbers */ "cv03",
+      /* Open six */ "cv04" 1,
+      /* Open nine */ "cv01" 1,
+      /* Alternate one */ "cv09",
+      /* Flat-top three */ "cv02" 1; /* Open 4 */
+  }
+  @supports (font-variation-settings: normal) {
+    /* Use variable font if supported */
+    :root {
+      font-family: InterVariable, sans-serif;
+    }
+  }
+
+  *{
+    scroll-behavior: smooth;
+  }
+</style>
