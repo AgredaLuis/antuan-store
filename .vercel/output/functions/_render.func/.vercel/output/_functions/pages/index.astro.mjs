@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, a as renderComponent, d as renderTransition } from '../chunks/astro/server_BQUoTTc7.mjs';
 import { $ as $$Image } from '../chunks/_astro_assets_CLnyYu7l.mjs';
 /* empty css                                 */
-import { $ as $$Layout } from '../chunks/Layout_CyQ_RR5d.mjs';
+import { $ as $$Layout } from '../chunks/Layout_DUeu1nID.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$FAQ = createComponent(($$result, $$props, $$slots) => {
@@ -29,7 +29,7 @@ Para los de zona Anzoategui, las entregas se hacen en persona. La hora
 
 const $$Hero = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="mx-auto px-8 max-w-7xl py-24 md:px-12"> <div class="mx-auto text-center"> <h1 class="text-negroni-500 font-bold md:text-6xl text-3xl tracking-tight">
-Antuan Store<span class="md:block">Nuestros Productos</span> </h1> <p class="mt-8 text-white">
+Antuan Store <span class="block">Nuestros Productos</span> </h1> <p class="mt-8 text-white">
 Se libre de comunicarte con nosotros para mas informacion
 </p> <div class="flex justify-center flex-col gap-3 mt-10 sm:flex-row"> <a class="items-center h-12 justify-center font-semibold rounded-full border-negroni-500 duration-200 focus:outline-none inline-flex px-6 py-3 text-center w-full text-negroni-500 lg:w-auto border focus-visible:outline-negroni-500 text-negroni-500/80" href="https://wa.me/04248416642?text=Hola%2C%20estoy%20interesado%20en%20tus%20productos">Contactanos</a> <a class="items-center h-12 justify-center rounded-full font-semibold duration-200 focus:outline-none inline-flex px-6 py-3 text-center w-full border-2 hover:bg-transparent border-negroni-500 bg-negroni-500 focus-visible:outline-negroni-500 focus-visible:ring-negroni-500 hover:border-negroni-500 hover:text-negroni-500 lg:w-auto text-charcoal-500" href="#faq">Preguntas Frecuentes &nbsp; →</a> </div> </div> </div>`;
 }, "C:/Users/Agreda/Documents/Projects Code/antuan-store/src/components/landing/Hero.astro", void 0);
@@ -37,7 +37,7 @@ Se libre de comunicarte con nosotros para mas informacion
 const $$ProductsList = createComponent(async ($$result, $$props, $$slots) => {
   const response = await fetch("https://store.api.antuan01.com/api/products");
   const data = await response.json();
-  return renderTemplate`${maybeRenderHead()}<section> <div class="mx-auto px-8 max-w-7xl py-12 md:px-12"> <div class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-3"> ${data.map((products) => renderTemplate`<a${addAttribute(`/${products.slug}`, "href")}> <figure${addAttribute(products.id, "id")} class="hover:cursor-pointer"> <div class="rounded-3xl overflow-hidden shadow-2xl"> ${renderComponent($$result, "Image", $$Image, { "class": "w-full hover:scale-105 hover:contrast-125 duration-200", "src": products.image_url, "alt": products.slug, "width": "1310", "height": "873", "data-astro-transition-scope": renderTransition($$result, "wqvjwzfv", "", products.slug) })} </div> <div class="mt-4 flex justify-between px-6"> <div> <h3 class="font-medium text-negroni-500"> <span aria-hidden="true" class="inset-0"></span> ${products.name} </h3> <p class="mt-1 text-lg font-medium leading-6 text-white"> ${products.description} </p> </div> <p class="text-base text-tomato-500">$${products.price}</p> </div> </figure> </a>`)} </div> </div> </section>`;
+  return renderTemplate`${maybeRenderHead()}<section> <div class="mx-auto px-8 max-w-7xl py-12 md:px-12"> <div class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-3"> ${data.map((products) => renderTemplate`<a${addAttribute(`/${products.slug}`, "href")}> <figure${addAttribute(products.id, "id")} class="hover:cursor-pointer"> <div class="rounded-3xl overflow-hidden shadow-2xl"> ${renderComponent($$result, "Image", $$Image, { "class": "w-full hover:scale-105 rounded-3xl hover:contrast-125 duration-200", "src": products.image_url, "alt": products.slug, "width": "1310", "height": "873", "data-astro-transition-scope": renderTransition($$result, "wqvjwzfv", "", products.slug) })} </div> <div class="mt-4 flex justify-between px-6"> <div> <h3 class="font-medium text-negroni-500"> <span aria-hidden="true" class="inset-0"></span> ${products.name} </h3> <p class="mt-1 text-lg font-medium leading-6 text-white"> ${products.description} </p> </div> <p class="text-base text-tomato-500">$${products.price}</p> </div> </figure> </a>`)} </div> </div> </section>`;
 }, "C:/Users/Agreda/Documents/Projects Code/antuan-store/src/components/landing/ProductsList.astro", "self");
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {
