@@ -2,11 +2,11 @@
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, a as renderComponent, d as renderTransition } from '../chunks/astro/server_BQUoTTc7.mjs';
 import { $ as $$Image } from '../chunks/_astro_assets_CLnyYu7l.mjs';
 /* empty css                                 */
-import { $ as $$Layout } from '../chunks/Layout_DmqLtCI5.mjs';
+import { $ as $$Layout } from '../chunks/Layout_WLUtPtLt.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$FAQ = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${maybeRenderHead()}<section id="faq"> <div class="mx-auto px-8 max-w-4xl py-12 md:px-12"> <h2 class="text-negroni-500 font-bold md:text-6xl text-3xl tracking-tight text-center">
+  return renderTemplate`${maybeRenderHead()}<section id="faq"> <div class="mx-auto px-8 max-w-4xl py-8 md:px-12"> <h2 class="text-negroni-500 font-bold md:text-6xl text-3xl tracking-tight text-center">
 Preguntas Frecuentes
 </h2> <div class="space-y-4 mt-8"> <details class="group [&_summary::-webkit-details-marker]:hidden" open> <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"> <h2 class="font-medium">
 ¿Cómo se realiza el pago y qué formas de pago se aceptan?
@@ -31,7 +31,7 @@ const $$Hero = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="mx-auto px-8 max-w-7xl py-24 md:px-12"> <div class="mx-auto text-center"> <h1 class="text-negroni-500 font-bold md:text-6xl text-3xl tracking-tight">
 Antuan Store <span class="block">Nuestros Productos</span> </h1> <p class="mt-8 text-white">
 Se libre de comunicarte con nosotros para mas informacion
-</p> <div class="flex justify-center flex-col gap-3 mt-10 sm:flex-row"> <a class="items-center h-12 justify-center font-semibold rounded-full border-negroni-500 duration-200 focus:outline-none inline-flex px-6 py-3 text-center w-full text-negroni-500 lg:w-auto border focus-visible:outline-negroni-500 text-negroni-500/80" href="https://wa.me/04248416642?text=Hola%2C%20estoy%20interesado%20en%20tus%20productos">Contactanos</a> <a class="items-center h-12 justify-center rounded-full font-semibold duration-200 focus:outline-none inline-flex px-6 py-3 text-center w-full border-2 hover:bg-transparent border-negroni-500 bg-negroni-500 focus-visible:outline-negroni-500 focus-visible:ring-negroni-500 hover:border-negroni-500 hover:text-negroni-500 lg:w-auto text-charcoal-500" href="#faq">Preguntas Frecuentes &nbsp; →</a> </div> </div> </div>`;
+</p> <div class="flex justify-center flex-col gap-3 mt-10 sm:flex-row"> <a class="items-center h-12 justify-center font-semibold rounded-full border-negroni-500 duration-200 focus:outline-none inline-flex px-6 py-3 text-center w-full text-negroni-500 lg:w-auto border focus-visible:outline-negroni-500 text-negroni-500/80" href="https://wa.me/584248416642?text=Hola%2C%20estoy%20interesado%20en%20tus%20productos">Contactanos</a> <a class="items-center h-12 justify-center rounded-full font-semibold duration-200 focus:outline-none inline-flex px-6 py-3 text-center w-full border-2 hover:bg-transparent border-negroni-500 bg-negroni-500 focus-visible:outline-negroni-500 focus-visible:ring-negroni-500 hover:border-negroni-500 hover:text-negroni-500 lg:w-auto text-charcoal-500" href="#faq">Preguntas Frecuentes &nbsp; →</a> </div> </div> </div>`;
 }, "C:/Users/Agreda/Documents/Projects Code/antuan-store/src/components/landing/Hero.astro", void 0);
 
 const $$ProductsList = createComponent(async ($$result, $$props, $$slots) => {
